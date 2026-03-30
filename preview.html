@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metsandus</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f1a14;
+    color: #fff;
+}
+
+header {
+    background: url('https://images.unsplash.com/photo-forest') center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    padding: 10px;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1c2b22;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background: #000;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#home">Avaleht</a>
+    <a href="#services">Teenused</a>
+    <a href="#about">Minust</a>
+    <a href="#contact">Kontakt</a>
+</nav>
+
+<header id="home">
+    <h1>Metsandus<br>Professionaalne metsateenus</h1>
+</header>
+
+<section id="services">
+    <h2>Teenused</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Metsakonsultatsioon</h3>
+            <p>Aitame metsaomanikel teha targad otsused ja planeerida töid.</p>
+        </div>
+        <div class="card">
+            <h3>Saetööde koolitus</h3>
+            <p>Õpetame ohutuid ja efektiivseid töövõtteid.</p>
+        </div>
+        <div class="card">
+            <h3>Saetööd metsas</h3>
+            <p>Langetus, hooldus ja muud metsatööd professionaalselt.</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>Minust</h2>
+    <p>Olen kogenud metsanduse spetsialist, kes pakub praktilisi ja usaldusväärseid lahendusi metsaomanikele.</p>
+</section>
+
+<section id="contact">
+    <h2>Kontakt</h2>
+    <p>📞 Telefon: +372 XXX XXXX</p>
+    <p>✉️ Email: sinu@email.ee</p>
+</section>
+
+<footer>
+    <p>© 2026 Metsandus</p>
+</footer>
+
+</body>
+</html>
